@@ -1,0 +1,11 @@
+@use "@/styles/utlis.module.scss";
+
+.wrapper {
+  padding: var(--space-xl) 0;
+  background-color: var(--gray-10);
+}
+
+.flexContainer {
+  @extend .sideByCenter;
+  gap: 2em;
+}

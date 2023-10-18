@@ -1,0 +1,22 @@
+@use "../styles/parts/fonts" as *;
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-jump);
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-lg);
+}
+
+.post {
+  & h2 {
+    margin-top: 0.5em;
+    @extend .font-18-28;
+    font-weight: 400;
+  }
+
+  & figure {
+    position: relative;
+    aspect-ratio: 16/9;
+  }
+}

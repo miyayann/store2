@@ -1,0 +1,22 @@
+@use "../styles/_utlis.module.scss";
+
+.flexContainer {
+  @extend .spaceBetween;
+  margin: var(--space-lg) 0;
+  gap: 1em;
+}
+
+.next {
+  margin-left: auto;
+}
+
+.iconText {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+
+  &:hover {
+    background-color: rgba(#abd2d8, 0.5);
+    border-radius: 10px;
+  }
+}

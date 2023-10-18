@@ -1,0 +1,30 @@
+@use "../styles/globals_function/_mq.scss" as *;
+
+// 両端ぞろえ
+.spaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// 横並び（基本形）
+.sideBySide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @include mq("md") {
+    flex-direction: column;
+  }
+}
+
+// 横並び（中央揃え）
+.sideByCenter {
+  @extend .sideBySide;
+  align-items: center;
+  text-align: left;
+
+  @include mq("md") {
+    text-align: center;
+  }
+}

@@ -1,0 +1,25 @@
+@use "../styles/parts/fonts" as *;
+
+.stack {
+  padding: var(--space-sm) 0;
+}
+
+.stack * + * {
+  margin-top: var(--stack-spacer) 1em;
+}
+
+.subtitle {
+  @extend .font-18-26;
+  font-weight: 700;
+}
+
+.title {
+  --stack-space: 0.2em
+}
+
+.publish {
+  display: flex;
+  gap: 1.5em;
+  color: var(--gray-50);
+  @extend .font-16-24;
+}

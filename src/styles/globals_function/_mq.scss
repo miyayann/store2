@@ -1,0 +1,39 @@
+@use "sass:math";
+
+@function to-rem($px) {
+  $rem: math.div($px, $root-font-size) * 1rem;
+  @return $rem;
+}
+
+// font-size: to-em(16px, 32px) -> 0.5em
+@function to-em($px, $self-px: $root-font-size) {
+  $em: math.div($px, $self-px) * 1em;
+  @return $em;
+}
+ 
+ $breakpoints: (
+   // 480px以下(スマホの横向き)のモニタで適用
+   "sm": "screen and (max-width: #{to-em(480px, 16px)})",
+   // 600px以下のタブレットやモニタで適用
+   "md": "screen and (max-width: #{to-em(768px, 16px)})",
+   // 960px以下のモニタで適用
+   "lg": "screen and (max-width: #{to-em(960px, 16px)})",
+   // 1280px以下のモニタで適用
+   "xl": "screen and (max-width: #{to-em(1280px, 16px)})",
+
+   // 480px以上(スマホの横向き)のモニタで適用
+   "minsm": "screen and (min-width: #{to-em(480px, 16px)})",
+   // 600px以上のタブレットやモニタで適用
+   "minmd": "screen and (min-width: #{to-em(768px, 16px)})",
+   // 960px以上のモニタで適用
+   "minlg": "screen and (min-width: #{to-em(960px, 16px)})",
+   // 1280px以上のモニタで適用
+   "minxl": "screen and (min-width: #{to-em(1280px, 16px)})",
+ ) !default;
+ 
+ @mixin mq($breakpoint: md) {
+   @media #{map-get($breakpoints, $breakpoint)} {
+     @content;
+   }
+ }
+ 

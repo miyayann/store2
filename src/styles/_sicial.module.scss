@@ -1,0 +1,8 @@
+@use "../styles/parts/fonts" as *;
+
+.list {
+  display: flex;
+  gap: 1.5em;
+  @extend .font-16-24;
+  // font-size: var(fontSize);
+}

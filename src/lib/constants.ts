@@ -1,7 +1,7 @@
 export const siteMeta = {
   siteTitle: "STORE",
   siteDesc: "Store site",
-  siteUrl: "http://localhost:3000",
+  siteUrl: "https://store2-tau.vercel.app/",
   siteLang: "ja",
   siteLocale: 'ja_JP',
   siteType: "website",

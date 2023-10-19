@@ -47,6 +47,11 @@ const Nav = () => {
             <p onClick={closeNav}>Blog</p>
           </Link>
         </li>
+        <li>
+          <Link href="/search">
+            <p onClick={closeNav}>Search</p>
+          </Link>
+        </li>
       </ul>
     </nav>
   )

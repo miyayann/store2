@@ -35,7 +35,7 @@ const Posts = ({posts}: BlogProps) => {
               placeholder='blur'
               blurDataURL={eyecatch.blurDataURL} 
               />
-        </figure>
+          </figure>
           <h2>{title}</h2>
         </Link>
       </article>

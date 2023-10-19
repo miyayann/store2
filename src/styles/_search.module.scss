@@ -1,0 +1,36 @@
+.input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.icon {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+
+  &:hover {
+    transform: translateY(2px);
+    box-shadow: none; 
+  }
+}
+
+
+.search {
+  display: flex;
+  gap: 1.5em;
+  padding: var(--space-sm) 0;
+}
+
+.main {
+  margin: var(--space-sm) 0;
+}

@@ -17,6 +17,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@types/gtag.js": "^0.0.17",
     "@types/sharp": "^0.32.0",
+    "axios": "^1.5.1",
     "date-fns": "^2.30.0",
     "html-react-parser": "^4.2.5",
     "html-to-text": "^9.0.5",

@@ -71,3 +71,11 @@ interface Postprops {
 export interface BlogProps {
   posts: Postprops[];
 }
+
+export interface Blog {
+  slug: string;
+  title: string;
+  eyecatch: {
+    url: string;
+  };
+}
